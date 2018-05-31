@@ -1,4 +1,4 @@
-package practice.operators;
+package practice;
 
 import javax.swing.JOptionPane;
 
