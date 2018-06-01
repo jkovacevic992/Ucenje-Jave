@@ -8,6 +8,9 @@ public class For {
 		
 		
 		for(int i=0; i<list.length; i++) {
+			if(list[i]%16==0) {
+				break;
+			}
 			if(list[i]%2==0) {
 				continue;
 			}
