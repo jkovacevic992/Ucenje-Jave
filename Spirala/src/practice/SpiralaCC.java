@@ -20,23 +20,23 @@ public class SpiralaCC {
 		while(vrijednost <= jedan*dva) {
 			
 			for(int i = zadnjiRed; i>=prviRed;i--) {
-				spirala[i][zadnjiStupac] = vrijednost;
-				vrijednost++;
+				spirala[i][zadnjiStupac] = vrijednost++;
+				
 				
 			}
 			for(int i= zadnjiStupac-1; i>=prviStupac;i--) {
-				spirala[prviRed][i] = vrijednost;
-				vrijednost++;
+				spirala[prviRed][i] = vrijednost++;
+				
 				
 			}
 			for(int i= prviRed+1;i<=zadnjiRed;i++) {
-				spirala[i][prviStupac] = vrijednost;
-				vrijednost++;
+				spirala[i][prviStupac] = vrijednost++;
+				
 				
 			}
 			for(int i= prviStupac+1;i<zadnjiStupac;i++) {
-				spirala[zadnjiRed][i]=vrijednost;
-				vrijednost++;
+				spirala[zadnjiRed][i]=vrijednost++;
+				
 			}
 			zadnjiRed--;
 			zadnjiStupac--;
