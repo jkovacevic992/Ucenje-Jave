@@ -17,25 +17,38 @@ public class Spirala {
 		int zadnjiStupac = dva-1;
 		int zadnjiRed = jedan-1;
 		
+		kraj:
 		while(vrijednost <= jedan*dva) {
 			
 			for(int i = zadnjiStupac; i>=prviStupac;i--) {
 				spirala[zadnjiRed][i] = vrijednost++;
+				if (vrijednost > jedan * dva) {
+					break kraj;
+				}
 				
 				
 			}
 			for(int i= zadnjiRed-1; i>=prviRed;i--) {
 				spirala[i][prviStupac] = vrijednost++;
+				if (vrijednost > jedan * dva) {
+					break kraj;
+				}
 				
 				
 			}
 			for(int i= prviStupac+1;i<=zadnjiStupac;i++) {
 				spirala[prviRed][i] = vrijednost++;
+				if (vrijednost > jedan * dva) {
+					break kraj;
+				}
 				
 				
 			}
 			for(int i= prviRed+1;i<zadnjiRed;i++) {
 				spirala[i][zadnjiStupac]=vrijednost++;
+				if (vrijednost > jedan * dva) {
+					break kraj;
+				}
 				
 			}
 			zadnjiRed--;
