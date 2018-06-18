@@ -18,7 +18,6 @@ public class Spirala {
 	}
 
 	
-
 	public static void spiralaCW(int jedan, int dva) {
 		int[][] spirala = new int[jedan][dva];
 
@@ -64,7 +63,7 @@ public class Spirala {
 		}
 		for (int i = 0; i < jedan; i++) {
 			for (int j = 0; j < dva; j++) {
-				System.out.printf("%-5d", spirala[i][j]);
+				System.out.printf("%-4d", spirala[i][j]);
 			}
 			System.out.println();
 		}
@@ -117,7 +116,7 @@ public class Spirala {
 
 		for (int i = 0; i < jedan; i++) {
 			for (int j = 0; j < dva; j++) {
-				System.out.printf("%-5d", spirala[i][j]);
+				System.out.printf("%-4d", spirala[i][j]);
 			}
 			System.out.println();
 		}
