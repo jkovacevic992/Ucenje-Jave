@@ -37,7 +37,7 @@ public static BigInteger factorial(BigInteger num) {
 	if(compareToOne < 1) {
 		return num;
 	}else
-		{return (num.multiply(factorial(num.subtract(BigInteger.valueOf(numOne)))) );
+		{return (num.multiply(factorial(num.subtract(BigInteger.valueOf(1)))) );
 	}
 	
 	
