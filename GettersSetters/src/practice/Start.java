@@ -2,12 +2,12 @@ package practice;
 
 public class Start {
 	public static void main(String[] args) {
-//		Person[] persons = new Person[3];
-//		for(int i=0; i<persons.length;i++) {
-//			persons[i] = Person.createPerson();
-//		}
-//		
-//		System.out.println(persons[2].getName());
+		Person[] persons = new Person[5];
+		for(int i=0; i<persons.length;i++) {
+			persons[i] = Person.createPerson();
+		}
+		
+		System.out.println(persons[2].getName());
 		
 		Person personOne = new Person();
 		personOne.setName("John");
