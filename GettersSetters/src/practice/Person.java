@@ -15,10 +15,11 @@ public class Person {
 		this.lastName = lastName;
 		this.id = id;
 	}
-	
+
 	public static Person createPerson() {
-		
-		return new Person(JOptionPane.showInputDialog("Enter name"), JOptionPane.showInputDialog("Enter last name"), 1, JOptionPane.showInputDialog("Enter city"));
+
+		return new Person(JOptionPane.showInputDialog("Enter name"), JOptionPane.showInputDialog("Enter last name"), 1,
+				JOptionPane.showInputDialog("Enter city"));
 	}
 
 	public Person() {
@@ -56,6 +57,8 @@ public class Person {
 	public void setCity(String city) {
 		this.city = city;
 	}
-
+	public void sayHello() {
+		System.out.println("Hello person!");
+	}
 
 }
