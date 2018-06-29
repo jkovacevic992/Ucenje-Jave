@@ -26,5 +26,14 @@ public class Start {
 		Worker workerOne = new Worker("Adam", "Last Name", 1333, "Donji Miholjac", 666);
 		
 		workerOne.sayHello();
+		
+		GenericClass<String> genericString = new GenericClass<>();
+		genericString.setEntity("Hello!");
+		System.out.println(genericString.getEntity());
+		
+		GenericClass<Integer> number = new GenericClass<>();
+		number.setEntity(7);
+		System.out.println(genericString.getEntity() + " " + workerOne.getName() + ", your lucky number is " + number.getEntity() + ".");
+		
 	}
 }
