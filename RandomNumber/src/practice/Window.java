@@ -22,7 +22,7 @@ public class Window extends javax.swing.JFrame {
         initComponents();
         
         
-        System.out.println(randomNumber);
+       
     }
 
     /**
